@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+        <servlet-name>LoginServlet</servlet-name>
+        <!--Servlet类的位置-->
+        <servlet-class>web2.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <servlet-name>LoginServlet</servlet-name>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <url-pattern>/LoginServlet.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+        <servlet-name>SaveServlet</servlet-name>
+        <!--Servlet类的位置-->
+        <servlet-class>web2.SaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <servlet-name>SaveServlet</servlet-name>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <url-pattern>/SaveServlet.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+        <servlet-name>SearchServlet</servlet-name>
+        <!--Servlet类的位置-->
+        <servlet-class>web2.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <servlet-name>SearchServlet</servlet-name>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <url-pattern>/SearchServlet.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+        <servlet-name>LocServlet</servlet-name>
+        <!--Servlet类的位置-->
+        <servlet-class>web2.LocServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <servlet-name>LocServlet</servlet-name>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <url-pattern>/LocServlet.action</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+        <servlet-name>ZcServlet</servlet-name>
+        <!--Servlet类的位置-->
+        <servlet-class>web2.ZcServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <servlet-name>ZcServlet</servlet-name>
+        <!-- servlet名称，与上面中的servlet-name必须一致 -->
+        <url-pattern>/ZcServlet.action</url-pattern>
+    </servlet-mapping>
+</web-app>
